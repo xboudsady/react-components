@@ -1,4 +1,5 @@
 import React from 'react';
+import Faker from 'faker';
 
 const CommentDetail = () => {
   return (
@@ -7,10 +8,12 @@ const CommentDetail = () => {
         <img src={Faker.image.avatar()} alt="avatar" />
       </a>
       <div className="content">
-        <a href="/" className="author">Same</a>
+        <a href="/" className="author">Sam</a>
         <div className="metadata"><span className="data">Today at 6:00 pm</span></div>
         <div className="text">Nice blog post!</div>
       </div>
     </div>
   );
 };
+
+export default CommentDetail;
